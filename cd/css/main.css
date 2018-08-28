@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: Gotham;
-    padding: 10px 0; }
+    padding: 10px; }
   .feature__circle {
     display: block;
     width: 133px;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
   .blog-page {
-    height: 445px;
+    min-height: 445px;
     width: 50%; }
     .blog-page--black {
       background: #222222 url("../img/blackbg.png") center no-repeat;
@@ -343,9 +343,7 @@ h1, h2, h3, h4, h5, h6 {
               -ms-flex-order: 1;
                   order: 1; } }
   .blog-box {
-    padding-top: 15%;
-    padding-left: 18%;
-    padding-right: 10%;
+    padding: 10% 18% 10% 18%;
     font-family: Gotham; }
   .blog__date {
     font-size: 13px; }
@@ -386,3 +384,24 @@ h1, h2, h3, h4, h5, h6 {
     width: 105%; }
   .campaign__text {
     font-size: 15px; }
+
+.writes {
+  min-height: 360px;
+  background: #11749e url() 0 0 no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .writes-row {
+    font-size: 15px;
+    width: 50%;
+    padding: 30px 50px 30px 100px;
+    background: transparent url("../img/icons/write-big.png") 2% center no-repeat; }
