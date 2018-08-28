@@ -260,9 +260,9 @@ h1, h2, h3, h4, h5, h6 {
   .title--black {
     color: #222222; }
   .title--w {
-    background: transparent url("../img/w.png") center no-repeat; }
+    background: transparent url("../img/icons/w.png") center no-repeat; }
   .title--b {
-    background: transparent url("../img/b.png") center no-repeat; }
+    background: transparent url("../img/icons/b.png") center no-repeat; }
 
 .subtitle {
   font-size: 30px;
