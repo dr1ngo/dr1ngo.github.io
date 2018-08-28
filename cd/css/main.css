@@ -1,36 +1,36 @@
 @font-face {
   font-family: Roboto;
-  src: local("Roboto Regular"), local("Roboto-Regular"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: Gotham;
-  src: local("Gotham-Book"), url("Gotham-Book.woff2") format("woff2"), url("Gotham-Book.woff") format("woff");
+  src: local("Gotham-Book"), url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: Gotham;
-  src: local("Gotham-Medium"), url("Gotham-Medium.woff2") format("woff2"), url("Gotham-Medium.woff") format("woff");
+  src: local("Gotham-Medium"), url("../fonts/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: Gotham;
-  src: local("Gotham Bold"), local("Gotham-Bold"), url("Gotham-Bold.woff2") format("woff2"), url("Gotham-Bold.woff") format("woff");
+  src: local("Gotham Bold"), local("Gotham-Bold"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: Roboto Cn;
-  src: local("Roboto Bold Condensed"), local("Roboto-BoldCondensed"), url("Roboto-BoldCondensed.woff2") format("woff2"), url("Roboto-BoldCondensed.woff") format("woff");
+  src: local("Roboto Bold Condensed"), local("Roboto-BoldCondensed"), url("../fonts/Roboto-BoldCondensed.woff2") format("woff2"), url("../fonts/Roboto-BoldCondensed.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: Open Sans;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
