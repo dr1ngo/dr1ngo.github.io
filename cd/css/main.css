@@ -1,21 +1,44 @@
 @font-face {
-  font-family: Ubuntu;
-  font-weight: regular;
-  src: url(../fonts/Ubuntu-Regular.ttf); }
+  font-family: Roboto;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: Ubuntu;
+  font-family: Gotham;
+  src: local("Gotham-Book"), url("Gotham-Book.woff2") format("woff2"), url("Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Gotham;
+  src: local("Gotham-Medium"), url("Gotham-Medium.woff2") format("woff2"), url("Gotham-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: Gotham;
+  src: local("Gotham Bold"), local("Gotham-Bold"), url("Gotham-Bold.woff2") format("woff2"), url("Gotham-Bold.woff") format("woff");
   font-weight: bold;
-  src: url(../fonts/Ubuntu-Bold.ttf); }
+  font-style: normal; }
 
 @font-face {
-  font-family: Avalon;
-  src: url(../fonts/Avalon-Medium.ttf); }
+  font-family: Roboto Cn;
+  src: local("Roboto Bold Condensed"), local("Roboto-BoldCondensed"), url("Roboto-BoldCondensed.woff2") format("woff2"), url("Roboto-BoldCondensed.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
 @font-face {
-  font-family: AxureHandwriting;
-  font-style: Italic;
-  src: url(../fonts/AxureHandwriting-Italic.ttf); }
+  font-family: Open Sans;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Open Sans;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 
 * {
   -webkit-transition: all .3s ease-out;
@@ -25,7 +48,7 @@
   padding: 0; }
 
 body {
-  font-family: Myriad Pro;
+  font-family: Gotham;
   color: #ffffff; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +180,7 @@ h1, h2, h3, h4, h5, h6 {
       color: #ffffff; }
     .navigation__item a.link-text, .navigation-social__item a.link-text {
       position: relative;
+      font-family: Myriad Pro;
       opacity: .7;
       -webkit-transition: all .3s ease-out;
       -o-transition: all .3s ease-out;
@@ -223,7 +247,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: transparent url("../img/w.png") center no-repeat;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -234,6 +257,19 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center; }
   .title--white {
     color: #ffffff; }
+  .title--black {
+    color: #222222; }
+  .title--w {
+    background: transparent url("../img/w.png") center no-repeat; }
+  .title--b {
+    background: transparent url("../img/b.png") center no-repeat; }
+
+.subtitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0; }
+  .subtitle--black {
+    color: #222222; }
 
 .feature {
   padding: 50px 0; }
@@ -278,8 +314,75 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     text-align: center; }
 
-.blog-page {
-  width: 50%;
-  height: 445px; }
-  .blog-page--black {
-    background: #222222 url("../img/blackbg.png") center no-repeat; }
+.blog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .blog-page {
+    height: 445px;
+    width: 50%; }
+    .blog-page--black {
+      background: #222222 url("../img/blackbg.png") center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .blog-page--white {
+      background: #222222 url("../img/whitebg.png") center no-repeat;
+      color: #222222;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    @media screen and (max-width: 991px) {
+      .blog-page {
+        width: 100%; }
+        .blog-page--photo_one {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; } }
+  .blog-box {
+    padding-top: 15%;
+    padding-left: 18%;
+    padding-right: 10%;
+    font-family: Gotham; }
+  .blog__date {
+    font-size: 13px; }
+  .blog__title {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .blog__text {
+    font-size: 15px; }
+  .blog img {
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.campaign {
+  padding: 90px 0;
+  color: #222222; }
+  .campaign-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    text-align: center; }
+    .campaign-box img {
+      width: 100%; }
+  .campaign__title {
+    color: #11749e;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 30px 0;
+    font-size: 18px;
+    width: 105%; }
+  .campaign__text {
+    font-size: 15px; }
