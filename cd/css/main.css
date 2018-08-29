@@ -41,9 +41,6 @@
   font-style: normal; }
 
 * {
-  -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;
   margin: 0;
   padding: 0; }
 
@@ -54,6 +51,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
+
+#toTop {
+  background: transparent url("../img/icons/arrow-up.png") center no-repeat;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none; }
 
 .header {
   background: transparent url("../img/header.png") center no-repeat;
@@ -136,7 +145,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 65px;
   border: 1px solid #ffffff;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
   .scroll-button:hover {
     opacity: .7; }
 
@@ -343,8 +355,7 @@ h1, h2, h3, h4, h5, h6 {
               -ms-flex-order: 1;
                   order: 1; } }
   .blog-box {
-    padding: 10% 18% 10% 18%;
-    font-family: Gotham; }
+    padding: 10% 75px 10% 75px; }
   .blog__date {
     font-size: 13px; }
   .blog__title {
@@ -371,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center; }
     .campaign-box img {
       width: 100%; }
@@ -381,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     padding: 30px 0;
     font-size: 18px;
-    width: 105%; }
+    width: 101%; }
   .campaign__text {
     font-size: 15px; }
 
@@ -402,6 +413,92 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center; }
   .writes-row {
     font-size: 15px;
-    width: 50%;
     padding: 30px 50px 30px 100px;
-    background: transparent url("../img/icons/write-big.png") 2% center no-repeat; }
+    background: transparent url("../img/icons/write-big.png") left center no-repeat; }
+
+.advantages {
+  min-height: 850px;
+  padding: 90px 0;
+  background: #222222 url("../img/advbg.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .advantages-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 991px) {
+      .advantages-box {
+        padding: 20px 0;
+        text-align: center; } }
+    .advantages-box img {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      width: 320px; }
+      @media screen and (max-width: 991px) {
+        .advantages-box img {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; } }
+  .advantages__title {
+    font-size: 25px;
+    text-transform: uppercase; }
+  .advantages__text {
+    font-size: 15px;
+    margin: 20px 0; }
+
+.quality {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 165px; }
+  .quality__text {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 500;
+    display: block;
+    background-color: #11749e; }
+    .quality__text:nth-child(1) {
+      width: 80%; }
+    .quality__text:nth-child(2) {
+      width: 90%; }
+    .quality__text:nth-child(3) {
+      width: 100%; }
+    @media screen and (max-width: 991px) {
+      .quality__text {
+        width: 100% !important; } }
