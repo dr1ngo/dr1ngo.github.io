@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
     @media screen and (max-width: 991px) {
       .header-top {
         display: none; } }
-    @media screen and (min-width: 991px) {
+    @media screen and (min-width: 992px) {
       .header-top--mobile {
         display: none; } }
     .header-top--mobile .icon {
@@ -161,6 +161,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .logo a {
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+    .logo a:hover {
+      opacity: .7; }
 
 .navigation, .navigation-social {
   margin: 0;
@@ -275,6 +281,8 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent url("../img/icons/w.png") center no-repeat; }
   .title--b {
     background: transparent url("../img/icons/b.png") center no-repeat; }
+  .title--t {
+    background: transparent url("../img/icons/t.png") center no-repeat; }
 
 .subtitle {
   font-size: 30px;
@@ -284,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222; }
 
 .feature {
-  padding: 50px 0; }
+  padding: 90px 0; }
   .feature-box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -304,7 +312,8 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: Gotham;
-    padding: 10px; }
+    padding: 10px;
+    padding-top: 50px; }
   .feature__circle {
     display: block;
     width: 133px;
@@ -502,3 +511,6 @@ h1, h2, h3, h4, h5, h6 {
     @media screen and (max-width: 991px) {
       .quality__text {
         width: 100% !important; } }
+
+.team {
+  padding: 90px 0; }
