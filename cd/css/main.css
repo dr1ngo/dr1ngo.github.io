@@ -53,16 +53,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 #toTop {
-  background: transparent url("../img/icons/arrow-up.png") center no-repeat;
-  width: 70px;
-  height: 70px;
+  background: rgba(71, 71, 71, 0.7) url("../img/icons/arrow-up.png") center no-repeat;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 40px;
+  height: 40px;
   text-align: center;
   padding: 5px;
   position: fixed;
   bottom: 10px;
   right: 10px;
   cursor: pointer;
-  display: none; }
+  display: none;
+  -webkit-transition: background .3s ease-out;
+  -o-transition: background .3s ease-out;
+  transition: background .3s ease-out; }
+  #toTop:hover {
+    background: #474747 url("../img/icons/arrow-up.png") center no-repeat; }
 
 .header {
   background: transparent url("../img/header.png") center no-repeat;
@@ -513,4 +520,47 @@ h1, h2, h3, h4, h5, h6 {
         width: 100% !important; } }
 
 .team {
-  padding: 90px 0; }
+  padding: 90px 0;
+  position: relative; }
+  .team-box img {
+    width: 100%; }
+  @media screen and (max-width: 991px) {
+    .team-box {
+      margin: 50px 0; } }
+  .team__badge {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -45px;
+    width: 75%;
+    margin: auto;
+    height: 85px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500; }
+    @media screen and (max-width: 991px) {
+      .team__badge {
+        bottom: 0; } }
+  .team__name {
+    font-size: 20px;
+    color: #11749e; }
+  .team__position {
+    font-size: 15px;
+    color: #222222; }
