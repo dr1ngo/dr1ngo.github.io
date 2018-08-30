@@ -290,6 +290,8 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent url("../img/icons/b.png") center no-repeat; }
   .title--t {
     background: transparent url("../img/icons/t.png") center no-repeat; }
+  .title--c {
+    background: transparent url("../img/icons/c.png") center no-repeat; }
 
 .subtitle {
   font-size: 30px;
@@ -431,6 +433,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     padding: 30px 50px 30px 100px;
     background: transparent url("../img/icons/write-big.png") left center no-repeat; }
+    @media screen and (max-width: 991px) {
+      .writes-row {
+        text-align: center;
+        background: transparent url("../img/icons/write-big.png") top center no-repeat;
+        padding: 0;
+        padding-top: 100px;
+        margin: 30px 0; } }
 
 .advantages {
   min-height: 850px;
@@ -564,3 +573,48 @@ h1, h2, h3, h4, h5, h6 {
   .team__position {
     font-size: 15px;
     color: #222222; }
+
+.contact {
+  padding: 90px 0;
+  background: #222222 url("../img/contactbg.png") center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 850px; }
+  .contact-form {
+    margin: 50px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contact-form input.contact-form__name, .contact-form input.contact-mail, .contact-form input.contact-form__phone, .contact-form textarea.contact-form__message {
+      font-size: 15px;
+      height: 50px;
+      width: 32%;
+      margin: 10px 0;
+      padding: 20px;
+      border: 1px solid #ffffff;
+      background: transparent url() 0 0 no-repeat;
+      color: #808080; }
+      @media screen and (max-width: 991px) {
+        .contact-form input.contact-form__name, .contact-form input.contact-mail, .contact-form input.contact-form__phone, .contact-form textarea.contact-form__message {
+          width: 100%; } }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline: 0; }
+    .contact-form__message {
+      width: 100% !important;
+      height: 150px !important; }
+    .contact-form__submit {
+      font-size: 24px;
+      padding: 13px 45px;
+      margin: 50px auto;
+      text-transform: uppercase;
+      color: #ffffff;
+      border: 0;
+      background-color: #11749e; }
