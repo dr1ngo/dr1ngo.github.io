@@ -41,6 +41,9 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 1200px; } }
 
 .header {
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
   width: 100%;
   background-color: rgba(9, 8, 12, 0.9);
   position: fixed; }
@@ -64,6 +67,8 @@ h1, h2, h3, h4, h5, h6 {
             -ms-flex-pack: center;
                 justify-content: center;
         height: 200px; } }
+  .header:hover {
+    opacity: 1; }
 
 .logo {
   cursor: pointer;
@@ -179,7 +184,7 @@ a.arrow {
   height: 30px;
   display: block;
   top: 35%;
-  z-index: 999;
+  z-index: 1;
   position: absolute;
   background: 11px no-repeat; }
   a.arrow:hover {
@@ -198,3 +203,9 @@ a.arrow {
   color: #fff; }
   .title span.pink {
     color: #ff0036; }
+
+.notActive {
+  opacity: 0; }
+
+.active {
+  opacity: 1; }
