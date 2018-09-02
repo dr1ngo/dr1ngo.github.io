@@ -41,12 +41,17 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 1200px; } }
 
 .header {
+  z-index: 10;
   -webkit-transition: opacity .3s ease-out;
   -o-transition: opacity .3s ease-out;
   transition: opacity .3s ease-out;
   width: 100%;
   background-color: rgba(9, 8, 12, 0.9);
   position: fixed; }
+  @media screen and (max-width: 768px) {
+    .header {
+      height: 100%;
+      display: none; } }
   .header-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -58,15 +63,17 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 70px; }
+            justify-content: space-between; }
     @media screen and (max-width: 1072px) {
       .header-wrapper {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 200px; } }
+        min-height: 200px; } }
+    @media screen and (max-width: 768px) {
+      .header-wrapper {
+        padding-top: 120px; } }
   .header:hover {
     opacity: 1; }
 
@@ -100,11 +107,13 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70px;
   width: 822px;
   margin-left: 270px;
   -webkit-align-self: flex-end;
@@ -114,6 +123,11 @@ h1, h2, h3, h4, h5, h6 {
     .navigation {
       width: 100%;
       margin: 0; } }
+  @media screen and (max-width: 768px) {
+    .navigation {
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start; } }
   .navigation__item {
     font-size: 18px;
     text-transform: uppercase;
@@ -123,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    max-width: 125px;
+    height: 70px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -150,6 +164,14 @@ h1, h2, h3, h4, h5, h6 {
           border-top: none; } }
     .navigation__item:hover:after {
       opacity: 1; }
+    @media screen and (max-width: 768px) {
+      .navigation__item {
+        height: 30px;
+        margin: 10px 0;
+        width: 100%; }
+        .navigation__item:after {
+          width: 100%;
+          opacity: 1; } }
 
 .main {
   height: 630px;
