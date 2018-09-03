@@ -48,10 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background-color: rgba(9, 8, 12, 0.9);
   position: fixed; }
+  @media screen and (max-width: 1072px) {
+    .header {
+      display: none; } }
   @media screen and (max-width: 768px) {
     .header {
-      height: 100%;
-      display: none; } }
+      height: 100%; } }
   .header-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -220,14 +222,76 @@ a.arrow {
     background-image: url("../img/icons/right.png"); }
 
 .title {
+  text-align: center;
   font-weight: bold;
-  font-size: 30px;
-  color: #fff; }
+  font-size: 30px; }
   .title span.pink {
     color: #ff0036; }
+  .title--white {
+    color: #fff; }
+  .title--black {
+    color: #262626; }
 
 .notActive {
   opacity: 0; }
 
 .active {
   opacity: 1; }
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: #131313;
+  -webkit-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out; }
+  .btn:hover {
+    background-color: #ff0036; }
+
+.about {
+  min-height: 1180px;
+  padding: 90px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.dot {
+  width: 560px;
+  outline: 1px solid #e7e7e7;
+  cursor: pointer;
+  margin: 15px 0; }
+  .dot-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f7f7f7;
+    outline: 1px solid #e7e7e7;
+    height: 45px;
+    font-size: 20px;
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;
+    transition: color .3s ease-out; }
+    .dot-header--active {
+      color: #ff0036; }
+  .dot__icon {
+    display: inline-block;
+    background: transparent url("../img/icons/dot.png") center no-repeat;
+    width: 60px;
+    outline: 1px solid #e7e7e7;
+    height: 100%; }
+    .dot__icon--active {
+      background: transparent url("../img/icons/dot-active.png") center no-repeat; }
+  .dot__title {
+    display: inline-block;
+    padding: 10px;
+    width: 100%; }
+  .dot-content {
+    display: none;
+    padding: 15px; }
