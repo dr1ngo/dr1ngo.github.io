@@ -341,17 +341,7 @@ a:hover {
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; } }
     .services-wrapper--sub {
-      display: none;
-      z-index: 999; }
-      @media screen and (max-width: 991px) {
-        .services-wrapper--sub {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap; } }
+      display: none; }
   .services-box {
     position: absolute;
     width: 250px;

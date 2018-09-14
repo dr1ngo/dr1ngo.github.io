@@ -43,7 +43,7 @@ $(function() {
    $('.services-box--btn').click(function() {
       var elm = $(".services-wrapper--sub");
         if (elm.css("display") === "none"){
-          elm.fadeIn();
+          elm.css("display", "flex").hide().fadeIn();;
         }else{
           elm.fadeOut();
       };
