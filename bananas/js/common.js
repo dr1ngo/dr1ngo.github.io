@@ -62,9 +62,14 @@ $(function() {
   });
 });
 
-
 $(function() {
-  jQuery(".services-box--btn").click(function(){
-    $('.services-wrapper--sub').slideToggle();
-  });
+   $('.services-box--btn').click(function() {
+      var elm = $(".services-wrapper--sub");
+        if (elm.css("display") === "none"){
+          elm.fadeIn();
+        }else{
+          elm.fadeOut();
+      };
+   });
 });
+
