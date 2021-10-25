@@ -1141,7 +1141,7 @@ body {
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: rgba(20, 20, 20, 0.2);
+    background-color: rgba(20, 20, 20, 0.9);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
