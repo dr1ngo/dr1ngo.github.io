@@ -845,6 +845,10 @@ body {
   bottom: 35%;
 }
 
+.garant {
+  background: #FAFAFA;
+}
+
 .garant__wrapper {
   padding: 160px 0 250px;
 }
@@ -930,6 +934,10 @@ body {
 .quote__author_post {
   font-size: 15px;
   font-family: 'Muller-Light';
+}
+
+.results {
+  background: #FAFAFA;
 }
 
 .results__wrapper {
