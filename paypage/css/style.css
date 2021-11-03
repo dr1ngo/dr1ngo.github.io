@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#paypage {
+    font-family: sans-serif;
+    background-image: url('../img/paypageBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#paypage .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#paypage .nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#paypage .paypage-wrapper {
+    padding: 25px 0;
+    background-image: url(../img/paypageWrapperBg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#paypage .title {
+    text-transform: uppercase;
+    width: 50%;
+    margin: 60px 0 40px;
+    font-size: 60px;
+}
+
+#paypage .subtitle {
+    font-size: 24px;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+}
+
+#paypage .subtitle::after {
+    content: '';
+    width: 16px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/mobile.svg);
+    background-repeat: no-repeat;
+    left: 336px;
+}
+
+#paypage .subtitle::before {
+    content: '';
+    width: 54px;
+    height: 76px;
+    position: absolute;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    left: 293px;
+    top: 35px;
+}
+
+#paypage .paypage-qr {
+    width: 240px;
+    height: 240px;
+    border: 6px solid transparent;
+    border-image: linear-gradient(#ffaf7b,#ff695a); -moz-border-image: -moz-linear-gradient(#ffaf7b,#ff695a); -webkit-border-image: -webkit-linear-gradient(#ffaf7b,#ff695a);
+    border-image-slice: 1;
+}
+
+#paypage .paypage-information {
+    margin: 40px 0 75px;
+}
+#paypage .paypage-information p {
+    margin: 40px 0 75px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#paypage .color {
+    color: #ff695a;
+}
+
+
+@media all and (max-width: 1279px){
+    
+    #paypage .title {
+        font-size: 40px;
+    }
+    
+    #paypage .subtitle {
+        font-size: 20px;
+    }
+    
+    
+    #paypage .paypage-information p {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1023px){
+
+    #paypage .paypage-wrapper {
+        background-size: contain;
+    }
+
+    #paypage .paypage-qr {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #paypage .subtitle::after {
+        left: 250px;
+    }
+    
+    #paypage .subtitle::before {
+        content: '';
+        width: 54px;
+        height: 76px;
+        position: absolute;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        left: 205px;
+        top: 35px;
+    }
+}
+
+@media all and (max-width: 599px){
+	#paypage .title {
+        font-size: 36px;
+        width: 100%;
+        margin: 35px 0 25px;
+    }
+    
+    #paypage .subtitle {
+        font-size: 18px;
+    }
+}
